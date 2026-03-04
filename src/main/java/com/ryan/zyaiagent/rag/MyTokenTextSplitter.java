@@ -4,6 +4,7 @@ import org.springframework.ai.document.Document;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,8 +17,10 @@ class MyTokenTextSplitter {
         return splitter.apply(documents);
     }
 
-//    public List<Document> splitCustomized(List<Document> documents) {
-//        TokenTextSplitter splitter = new TokenTextSplitter(200, 100, 10, 5000, true);
-//        return splitter.apply(documents);
-//    }
+    public List<Document> splitCustomized(List<Document> documents) {
+        List<Character> punctuationMarks = Arrays.asList('.', '!', '?', ';', '，', '。', '！', '？', '；');
+
+        TokenTextSplitter splitter = new TokenTextSplitter(200, 100, 10, 5000, true, punctuationMarks);
+        return splitter.apply(documents);
+    }
 }
