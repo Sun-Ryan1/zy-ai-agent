@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4EC"/>
+      <stop offset="100%" style="stop-color:#FFCCD5"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4E37"/>
+      <stop offset="100%" style="stop-color:#3D2E1F"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+  
+  <ellipse cx="50" cy="58" rx="22" ry="20" fill="#FFE4D6"/>
+  
+  <ellipse cx="50" cy="35" rx="24" ry="22" fill="url(#hairGrad)"/>
+  <ellipse cx="50" cy="28" rx="20" ry="12" fill="url(#hairGrad)"/>
+  
+  <ellipse cx="35" cy="40" rx="6" ry="4" fill="url(#hairGrad)"/>
+  <ellipse cx="65" cy="40" rx="6" ry="4" fill="url(#hairGrad)"/>
+  
+  <ellipse cx="40" cy="52" rx="5" ry="6" fill="white"/>
+  <ellipse cx="60" cy="52" rx="5" ry="6" fill="white"/>
+  
+  <circle cx="41" cy="53" r="3" fill="#3D2E1F"/>
+  <circle cx="61" cy="53" r="3" fill="#3D2E1F"/>
+  
+  <circle cx="42" cy="52" r="1" fill="white"/>
+  <circle cx="62" cy="52" r="1" fill="white"/>
+  
+  <ellipse cx="50" cy="62" rx="3" ry="2" fill="#FFB6C1"/>
+  
+  <path d="M44 68 Q50 73 56 68" stroke="#FF85A2" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <ellipse cx="32" cy="56" rx="4" ry="2.5" fill="#FFCCD5" opacity="0.6"/>
+  <ellipse cx="68" cy="56" rx="4" ry="2.5" fill="#FFCCD5" opacity="0.6"/>
+  
+  <circle cx="38" cy="26" r="3" fill="#FF85A2" opacity="0.3"/>
+  <circle cx="62" cy="28" r="2" fill="#FF85A2" opacity="0.3"/>
+</svg>

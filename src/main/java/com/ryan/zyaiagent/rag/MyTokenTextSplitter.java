@@ -18,9 +18,9 @@ class MyTokenTextSplitter {
     }
 
     public List<Document> splitCustomized(List<Document> documents) {
-        List<Character> punctuationMarks = Arrays.asList('.', '!', '?', ';', '，', '。', '！', '？', '；');
+//        List<Character> punctuationMarks = Arrays.asList('.', '!', '?', ';', '，', '。', '！', '？', '；');
 
-        TokenTextSplitter splitter = new TokenTextSplitter(200, 100, 10, 5000, true, punctuationMarks);
+        TokenTextSplitter splitter = new TokenTextSplitter(200, 100, 10, 5000, true);
         return splitter.apply(documents);
     }
 }

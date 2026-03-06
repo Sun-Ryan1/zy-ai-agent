@@ -32,7 +32,7 @@ public class LoveAppVectorStoreConfig {
         // 加载文档
         List<Document> documentList = loveAppDocumentLoader.loadMarkdowns();
         // 自主切分文档
-//        List<Document> splitDocuments = myTokenTextSplitter.splitCustomized(documentList);
+        List<Document> splitDocuments = myTokenTextSplitter.splitCustomized(documentList);
         // 自动补充关键词元信息
         List<Document> enrichedDocuments = myKeywordEnricher.enrichDocuments(documentList);
         simpleVectorStore.add(enrichedDocuments);
