@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E0E0E0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF"/>
+      <stop offset="50%" style="stop-color:#00C8FF"/>
+      <stop offset="100%" style="stop-color:#0088FF"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+  
+  <ellipse cx="50" cy="55" rx="22" ry="20" fill="#F5F5F5"/>
+  
+  <ellipse cx="50" cy="32" rx="20" ry="18" fill="url(#hairGrad)"/>
+  <path d="M30 28 Q35 15 50 20 Q65 15 70 28 L68 35 Q50 25 32 35 Z" fill="url(#hairGrad)"/>
+  <path d="M25 35 Q30 20 40 30" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M75 35 Q70 20 60 30" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <ellipse cx="38" cy="45" rx="8" ry="5" fill="#1A1A2E"/>
+  <ellipse cx="62" cy="45" rx="8" ry="5" fill="#1A1A2E"/>
+  
+  <circle cx="38" cy="45" r="4" fill="url(#eyeGrad)" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="62" cy="45" r="4" fill="url(#eyeGrad)" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="39" cy="44" r="1.5" fill="white"/>
+  <circle cx="63" cy="44" r="1.5" fill="white"/>
+  
+  <line x1="32" y1="42" x2="44" y2="42" stroke="#00FFFF" stroke-width="0.5" opacity="0.5"/>
+  <line x1="56" y1="42" x2="68" y2="42" stroke="#00FFFF" stroke-width="0.5" opacity="0.5"/>
+  
+  <path d="M42 58 Q50 62 58 58" stroke="#CCCCCC" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <rect x="28" y="40" width="20" height="10" rx="2" fill="rgba(0,0,0,0.3)" opacity="0.5"/>
+  
+  <circle cx="25" cy="25" r="2" fill="#00FFFF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="75" cy="30" r="1.5" fill="#00FFFF" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
