@@ -29,7 +29,7 @@ public class AiController {
     private ChatModel dashscopeChatModel;
 
     /**
-     * 同步调用 AI 恋爱大师应用
+     * 同步调用 AI 恋爱分析师应用
      *
      * @param message
      * @param chatId
@@ -41,7 +41,7 @@ public class AiController {
     }
 
     /**
-     * SSE 流式调用 AI 恋爱大师应用
+     * SSE 流式调用 AI 恋爱分析师应用
      *
      * @param message
      * @param chatId
@@ -53,7 +53,7 @@ public class AiController {
     }
 
     /**
-     * SSE 流式调用 AI 恋爱大师应用
+     * SSE 流式调用 AI 恋爱分析师应用
      *
      * @param message
      * @param chatId
@@ -68,7 +68,7 @@ public class AiController {
     }
 
     /**
-     * SSE 流式调用 AI 恋爱大师应用
+     * SSE 流式调用 AI 恋爱分析师应用
      *
      * @param message
      * @param chatId
