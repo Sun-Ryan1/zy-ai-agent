@@ -17,9 +17,9 @@
       <div class="app-cards">
         <div class="app-card love-card" @click="goToLoveApp">
           <div class="app-icon">
-            <img src="../assets/love-ai-avatar.svg" alt="AI 恋爱大师" class="avatar-img" />
+            <img src="../assets/love-ai-avatar.svg" alt="AI 恋爱分析师" class="avatar-img" />
           </div>
-          <h2 class="no-select">AI 恋爱大师</h2>
+          <h2 class="no-select">AI 恋爱分析师</h2>
           <p class="no-select">智能恋爱顾问，为你解答情感困惑</p>
           <button class="enter-btn">进入应用</button>
         </div>
