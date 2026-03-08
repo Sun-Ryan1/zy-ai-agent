@@ -7,7 +7,7 @@
       </button>
       <div class="header-center">
         <img src="../assets/love-ai-avatar.svg" alt="AI" class="header-avatar" />
-        <h2>AI 恋爱大师</h2>
+        <h2>AI 恋爱分析师</h2>
       </div>
       <span class="chat-id">会话ID: {{ chatId }}</span>
     </div>
